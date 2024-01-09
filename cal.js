@@ -12,7 +12,9 @@ function toggleImageTransition() {
 }
 function displayPhoto() {
     const photoContainer = document.getElementById("huh");
-    
+    var audio = document.getElementById("aadio");
+   
+
     // Clear previous content
     photoContainer.innerHTML = '';
 
@@ -22,7 +24,14 @@ function displayPhoto() {
     photo.alt = 'Photo';
     photo.className = 'w-64 h-auto';
     photoContainer.appendChild(photo);
+    setTimeout(() => {
+        audio.play();
+    }, 100);
+
+    // Play the audio
+   
 }
+
 
 function displayVideo() {
     const videoContainer = document.getElementById("koyl");
