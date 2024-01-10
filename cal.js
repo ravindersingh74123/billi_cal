@@ -2,7 +2,7 @@ const first = document.querySelector("#first");
 const second = document.querySelector("#second");
 const third = document.querySelector("#third");
 const huhh = document.querySelector("#huh");
-// const opcode= document.querySelector("#third");
+
 function toggleImageTransition() {
     var image = document.getElementById('huh');
     var audio = document.getElementById('audio')
