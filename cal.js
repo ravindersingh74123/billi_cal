@@ -1,4 +1,4 @@
-const first = document.querySelector("#first");
+cconst first = document.querySelector("#first");
 const second = document.querySelector("#second");
 const third = document.querySelector("#third");
 const huhh = document.querySelector("#huh");
@@ -33,7 +33,7 @@ function displayPhoto() {
 }
 
 
-function displayVideo() {
+function displayVideo(url) {
     const videoContainer = document.getElementById("koyl");
     
     // Clear previous content
@@ -42,10 +42,10 @@ function displayVideo() {
 
     // Display a video
     const video = document.createElement('video');
-    video.className = 'w-64 h-auto';
+    video.className = 'w-100 h-64';
     video.controls = true;
     const source = document.createElement('source');
-    source.src = 'koyl.mp4'; // Replace with your video URL
+    source.src = url; // Replace with your video URL
     source.type = 'video/mp4';
     video.appendChild(source);
     videoContainer.appendChild(video);
@@ -61,8 +61,27 @@ function sum(opcode){
     
         let suma= value1+value2;
         if(suma ==7){
-            displayVideo();
+            let rurl='koyl.mp4';
+            displayVideo(rurl);
             third.value=suma;
+        }
+        else if(suma==18){
+            let aurl='viking.mp4';
+            displayVideo(aurl);
+            third.value=suma;
+
+        }
+        else if(suma==10){
+            let wurl='messi.mp4';
+            displayVideo(wurl);
+            third.value=suma;
+
+        }
+        else if(suma==69){
+            let qurl='onichan.mp4';
+            displayVideo(qurl);
+            third.value=suma;
+
         }
         else{
             third.value=suma;
@@ -74,14 +93,64 @@ function sum(opcode){
         let value2=parseInt(second.value);    
     
         let suma= value1*value2;
-        third.value=suma;
+        if(suma ==7){
+            let rurl='koyl.mp4';
+            displayVideo(rurl);
+            third.value=suma;
+        }
+        else if(suma==18){
+            let aurl='viking.mp4';
+            displayVideo(aurl);
+            third.value=suma;
+
+        }
+        else if(suma==10){
+            let wurl='messi.mp4';
+            displayVideo(wurl);
+            third.value=suma;
+
+        }
+        else if(suma==69){
+            let qurl='onichan.mp4';
+            displayVideo(qurl);
+            third.value=suma;
+
+        }
+        else{
+            third.value=suma;
+        }
     }
     else if(opcode=="sub"){
         let value1=parseInt(first.value);
         let value2=parseInt(second.value);
     
         let suma= value1-value2;
-        third.value=suma;
+        if(suma ==7){
+            let rurl='koyl.mp4';
+            displayVideo(rurl);
+            third.value=suma;
+        }
+        else if(suma==18){
+            let aurl='viking.mp4';
+            displayVideo(aurl);
+            third.value=suma;
+
+        }
+        else if(suma==10){
+            let wurl='messi.mp4';
+            displayVideo(wurl);
+            third.value=suma;
+
+        }
+        else if(suma==69){
+            let qurl='onichan.mp4';
+            displayVideo(qurl);
+            third.value=suma;
+
+        }
+        else{
+            third.value=suma;
+        }
     }
     else{
         let value1=parseInt(first.value);
@@ -93,7 +162,32 @@ function sum(opcode){
         }
         else{
             let suma= value1/value2;
-            third.value=suma;
+            if(suma ==7){
+                let rurl='koyl.mp4';
+                displayVideo(rurl);
+                third.value=suma;
+            }
+            else if(suma==18){
+                let aurl='viking.mp4';
+                displayVideo(aurl);
+                third.value=suma;
+    
+            }
+            else if(suma==10){
+                let wurl='messi.mp4';
+                displayVideo(wurl);
+                third.value=suma;
+    
+            }
+            else if(suma==69){
+                let qurl='onichan.mp4';
+                displayVideo(qurl);
+                third.value=suma;
+    
+            }
+            else{
+                third.value=suma;
+            }
         }
     
        
