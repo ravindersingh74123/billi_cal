@@ -14,24 +14,70 @@
 </head>
 <body>
     
-    <div class="bg-cover bg-center h-screen flex flex-col items-center justify-center bg-red-300 gap-5 w-[100vw] h-[100vh]  " style="background-image: url('huh.jpg'); ">
-        <div class="border-2 flex flex-col items-center justify-center ">
-            <h1  class="text-6xl font-bold text-yellow-300 mb-4">MY_BILLIS_CAALCULATORR</h1>
-  
-        <input id="first" class=" first border-4 border-black rounded-md py-2 px-2 w-44  " type="text" placeholder="first number"></input>
-        <input id="second" class=" second border-4 border-black  rounded-md py-2 px-2 w-44 " type="text" placeholder="second number"></input>
-        <div class="flex ">
-            <button onclick="sum('sum')" class=" opcode border-2 w-44 bg-blue-500 text-white px-4 py-2 rounded">SUM</button>
-            <button onclick="sum('sub')" class=" opcode border-2 w-44 bg-blue-500 text-white px-4 py-2 rounded">SUB </button>
-            
-        </div>
-        <div class="flex">
-            <button onclick="sum('mul')" class=" opcode border-2 w-44 bg-blue-500 text-white px-4 py-2 rounded">MUL</button>
-            <button onclick="sum()" class=" opcode border-2 w-44 bg-blue-500 text-white px-4 py-2 rounded">DIV</button>
-        </div>
+    <div class="bg-cover bg-center h-screen flex flex-col p-2 gap-20 w-[100vw] h-[100vh]  " style="background-image: url('huh.jpg'); ">
         
-        <input id="third" class=" third border-4 border-black  rounded-md py-2 px-2 w-44 " type="text" placeholder="answer"></input>
+        <div class="flex flex-row justify-center items-center ">
+            <h1  class="text-6xl font-bold text-yellow-300 mb-4 bg-slate-900 p-2 rounded-lg border-2 border-orange-100">MY_BILLIS_CAALCULATORR</h1>
         </div>
+
+        <div class="w-full flex flex-row justify-around">
+            <div class="flex flex-row justify-center items-center bg-slate-900 p-8 w-96 rounded-lg border-2 border-orange-100">
+                <div class="flex flex-row">
+                    <input id="first" class=" first border-4 border-black rounded-md py-2 px-2 w-16  " type="text" placeholder="first number"></input>
+ 
+
+                    <div class="flex flex-col">
+                        <button onclick="sum('sum')" class="opcode text-slate-950 border-2 w-16 h-16 bg-yellow-300  px-2 py-1 rounded-full hover:bg-green-600 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 font-bold text-lg">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        
+                        
+                        
+                        <button onclick="sum('mul')" class="opcode text-slate-950 border-2 w-16 h-16  bg-yellow-300  px-2 py-1 rounded-full hover:bg-green-600 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 font-bold text-lg">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <button onclick="sum('sub')" class="opcode text-slate-950 border-2 w-16 h-16 bg-yellow-300  px-2 py-1 rounded-full hover:bg-green-600 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 font-bold text-lg">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <button onclick="sum('DIV')" class="opcode text-slate-950 border-2 w-16 h-16 bg-yellow-300  px-2 py-1 rounded-full hover:bg-green-600 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 font-bold text-lg">
+                            <i class="fa-solid fa-divide"></i>
+                        </button>
+                                                
+                    </div>
+                    
+                    <input id="second" class=" second border-4 border-black  rounded-md py-2 px-2 w-16 " type="text" placeholder="second number"></input>
+                    <div class=" flex justify-center items-center">
+                        <button class="opcode text-slate-950 border-2 w-16 h-16 bg-yellow-300 px-2 py-1 rounded-full hover:bg-green-600 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 font-bold text-lg ">
+                            <i class="fa-solid fa-equals"></i>
+                        </button>
+                    </div>
+                    
+                    <input id="third" class=" third border-4 border-black  rounded-md py-2 px-2 w-16 " type="text" placeholder="answer"></input>
+    
+                    
+                     
+                    
+                    
+                       
+                </div>
+
+            </div>
+            <div id="drake" class="w-80 flex justify-end items-end ">
+                <!-- <img class="rounded-lg border-2 border-orange-100" src="drake.jpg" alt=""> -->
+            </div>
+
+            <div id="container"  class="flex flex-row justify-center items-center bg-slate-900 p-8 w-96 rounded-lg border-2 border-orange-100"></div>
+
+        </div>
+
+        
+           
+        
+        
+        
+        
+        
+        
         <div id="huh">
             <audio id="aadio" src="huhsound.mp3"></audio>
         </div>
@@ -39,18 +85,7 @@
         <div id="viking"></div>
         <div id="messi"></div>
 
-        <!-- <div><img id="huh" class="h-72 transition-transform transform scale-0 duration-1000 ease-in-out  "src="huh_cat.jpg" alt="">
-            <audio id="audio" src="huhsound.mp3"></audio>
-            <img id="koyl" class="h-72 transition-transform transform scale-0 duration-1000 ease-in-out  "src="huh_cat.jpg" alt="">
 
-            
-        </div> -->
-        <!-- <div>
-            <video class="w-44 h-auto" controls>
-                <source src="koyl.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div> -->
         
     </div>  
     
@@ -59,5 +94,9 @@
          
    
     <script src="cal.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 </html>
+
+
+
