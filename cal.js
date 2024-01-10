@@ -336,7 +336,3 @@ function sum(opcode){
     }
     
 };
-       
-    }
-    
-};
