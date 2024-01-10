@@ -52,6 +52,27 @@ function displayDrake() {
     // Play the audio
    
 }
+function displaybilli() {
+    const photoContainer = document.getElementById("drake");
+    // var audio = document.getElementById("aadio");
+    
+   
+
+    // Clear previous content
+    photoContainer.innerHTML = '';
+
+    // Display a photo
+    const photo = document.createElement('img');
+    photo.src = 'billi.jpg'; // Replace with your photo URL
+    photo.alt = 'Photo';
+    photo.className = 'w-80 h-auto';
+    photo.classList.add('border-orange-100', 'border-2',  'rounded-lg');
+    photoContainer.appendChild(photo);
+    
+
+    // Play the audio
+   
+}
 
 
 function displayVideo(url) {
@@ -311,6 +332,10 @@ function sum(opcode){
             }
         }
     
+       
+    }
+    
+};
        
     }
     
