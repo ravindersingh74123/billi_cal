@@ -11,7 +11,7 @@ function toggleImageTransition() {
     
 }
 function displayPhoto() {
-    const photoContainer = document.getElementById("huh");
+    const photoContainer = document.getElementById("container");
     var audio = document.getElementById("aadio");
    
 
@@ -31,10 +31,31 @@ function displayPhoto() {
     // Play the audio
    
 }
+function displayDrake() {
+    const photoContainer = document.getElementById("drake");
+    // var audio = document.getElementById("aadio");
+    
+   
+
+    // Clear previous content
+    photoContainer.innerHTML = '';
+
+    // Display a photo
+    const photo = document.createElement('img');
+    photo.src = 'drake.jpg'; // Replace with your photo URL
+    photo.alt = 'Photo';
+    photo.className = 'w-80 h-auto';
+    photo.classList.add('border-orange-100', 'border-2',  'rounded-lg');
+    photoContainer.appendChild(photo);
+    
+
+    // Play the audio
+   
+}
 
 
 function displayVideo(url) {
-    const videoContainer = document.getElementById("koyl");
+    const videoContainer = document.getElementById("container");
     
     // Clear previous content
     // photoContainer.innerHTML = '';
@@ -63,23 +84,48 @@ function sum(opcode){
         if(suma ==7){
             let rurl='koyl.mp4';
             displayVideo(rurl);
+            displayDrake();
             third.value=suma;
         }
         else if(suma==18){
             let aurl='viking.mp4';
             displayVideo(aurl);
+            displayDrake();
             third.value=suma;
 
         }
         else if(suma==10){
-            let wurl='messi.mp4';
+            let wurl='10.mp4';
             displayVideo(wurl);
+            displayDrake();
             third.value=suma;
 
         }
         else if(suma==69){
             let qurl='onichan.mp4';
             displayVideo(qurl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==100){
+            let turl='puls.mp4';
+            displayVideo(turl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==9 || suma==11){
+            let uurl='911.mp4';
+            displayVideo(uurl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==1){
+            let qqurl='semc.mp4';
+            displayVideo(qqurl);
+            displayDrake();
             third.value=suma;
 
         }
@@ -96,23 +142,48 @@ function sum(opcode){
         if(suma ==7){
             let rurl='koyl.mp4';
             displayVideo(rurl);
+            displayDrake();
             third.value=suma;
         }
         else if(suma==18){
             let aurl='viking.mp4';
             displayVideo(aurl);
+            displayDrake();
             third.value=suma;
 
         }
         else if(suma==10){
-            let wurl='messi.mp4';
+            let wurl='10.mp4';
             displayVideo(wurl);
+            displayDrake();
             third.value=suma;
 
         }
         else if(suma==69){
             let qurl='onichan.mp4';
             displayVideo(qurl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==100){
+            let turl='puls.mp4';
+            displayVideo(turl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==9 || suma==11){
+            let uurl='911.mp4';
+            displayVideo(uurl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==1){
+            let qqurl='semc.mp4';
+            displayVideo(qqurl);
+            displayDrake();
             third.value=suma;
 
         }
@@ -128,23 +199,48 @@ function sum(opcode){
         if(suma ==7){
             let rurl='koyl.mp4';
             displayVideo(rurl);
+            displayDrake();
             third.value=suma;
         }
         else if(suma==18){
             let aurl='viking.mp4';
             displayVideo(aurl);
+            displayDrake();
             third.value=suma;
 
         }
         else if(suma==10){
-            let wurl='messi.mp4';
+            let wurl='10.mp4';
             displayVideo(wurl);
+            displayDrake();
             third.value=suma;
 
         }
         else if(suma==69){
             let qurl='onichan.mp4';
             displayVideo(qurl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==100){
+            let turl='puls.mp4';
+            displayVideo(turl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==9 || suma==11){
+            let uurl='911.mp4';
+            displayVideo(uurl);
+            displayDrake();
+            third.value=suma;
+
+        }
+        else if(suma==1){
+            let qqurl='semc.mp4';
+            displayVideo(qqurl);
+            displayDrake();
             third.value=suma;
 
         }
@@ -165,23 +261,48 @@ function sum(opcode){
             if(suma ==7){
                 let rurl='koyl.mp4';
                 displayVideo(rurl);
+                displayDrake();
                 third.value=suma;
             }
             else if(suma==18){
                 let aurl='viking.mp4';
                 displayVideo(aurl);
+                displayDrake();
                 third.value=suma;
     
             }
             else if(suma==10){
-                let wurl='messi.mp4';
+                let wurl='10.mp4';
                 displayVideo(wurl);
+                displayDrake();
                 third.value=suma;
     
             }
             else if(suma==69){
                 let qurl='onichan.mp4';
                 displayVideo(qurl);
+                displayDrake();
+                third.value=suma;
+    
+            }
+            else if(suma==100){
+                let turl='puls.mp4';
+                displayVideo(turl);
+                displayDrake();
+                third.value=suma;
+    
+            }
+            else if(suma==9 || suma==11){
+                let uurl='911.mp4';
+                displayVideo(uurl);
+                displayDrake();
+                third.value=suma;
+    
+            }
+            else if(suma==1){
+                let qqurl='semc.mp4';
+                displayVideo(qqurl);
+                displayDrake();
                 third.value=suma;
     
             }
