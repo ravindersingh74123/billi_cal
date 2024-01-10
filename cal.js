@@ -1,4 +1,4 @@
-cconst first = document.querySelector("#first");
+const first = document.querySelector("#first");
 const second = document.querySelector("#second");
 const third = document.querySelector("#third");
 const huhh = document.querySelector("#huh");
